@@ -188,10 +188,10 @@ h6 {
 }
 
 .navmenu {
-  position: relative;
+  position: fixed;
   top: 0;
   bottom: 0;
-  right: auto;
+  right: -300px;
   z-index: 997;
   transition: 0.3s;
   width: 300px;
