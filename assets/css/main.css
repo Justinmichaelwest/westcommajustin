@@ -171,9 +171,10 @@ h6 {
 --------------------------------------------------------------*/
 /* Navmenu */
 .mobile-nav-toggle {
-  position: fixed;
   color: var(--nav-color);
-  right: var(--bs-gutter-x, 1.5rem);
+  position: fixed;
+  top: 20px;
+  right: 20px;
   font-size: 32px;
   line-height: 0;
   cursor: pointer;
@@ -276,14 +277,14 @@ h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle {
-  right: calc(clamp(12px, 2vw, 24px) + 300px);
+  right: 310px;
   background-color: var(--surface-color);
   border-radius: 50%;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 .mobile-nav-active .navmenu {
- 
+  position: fixed;
   overflow: hidden;
   top: 0;
   bottom: 0;
@@ -291,7 +292,6 @@ h6 {
   background-color: var(--nav-mobile-background-color);
   transition: 0.3s;
 }
-
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -1282,4 +1282,3 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
-
