@@ -293,6 +293,14 @@ h6 {
   transition: 0.3s;
 }
 
+mobile-nav-toggle {
+  right: 40px;
+}
+
+.mobile-nav-active .mobile-nav-toggle {
+  right: 340px;
+}
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
