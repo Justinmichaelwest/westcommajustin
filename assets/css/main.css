@@ -1284,12 +1284,10 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-/* Match container horizontal padding */
 .header .mobile-nav-toggle {
-  right: var(--bs-gutter-x, 1.5rem);
+  right: var(--bs-gutter-x, 1.5rem) !important;
 }
 
-/* When menu is open */
 .mobile-nav-active .mobile-nav-toggle {
-  right: calc(var(--bs-gutter-x, 1.5rem) + 300px);
+  right: calc(var(--bs-gutter-x, 1.5rem) + 300px) !important;
 }
