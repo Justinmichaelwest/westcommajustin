@@ -174,7 +174,7 @@ h6 {
   color: var(--nav-color);
   position: fixed;
   top: 20px;
-  right: clamp(12px, 2vw, 24px);
+  right: var(--bs-gutter-x, 1.5rem);
   font-size: 32px;
   line-height: 0;
   cursor: pointer;
