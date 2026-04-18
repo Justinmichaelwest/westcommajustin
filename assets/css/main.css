@@ -172,8 +172,6 @@ h6 {
 /* Navmenu */
 .mobile-nav-toggle {
   color: var(--nav-color);
-  position: fixed;
-  top: 20px;
   right: var(--bs-gutter-x, 1.5rem);
   font-size: 32px;
   line-height: 0;
@@ -284,7 +282,7 @@ h6 {
 }
 
 .mobile-nav-active .navmenu {
-  position: fixed;
+ 
   overflow: hidden;
   top: 0;
   bottom: 0;
@@ -1285,10 +1283,11 @@ section,
 }
 
 .mobile-nav-toggle {
-  position: absolute;
+  position: relative;
   right: 0;
+  margin-left: auto;
 }
 
-.header {
-  position: relative;
+.header .container {
+  max-width: 1140px; /* matches Bootstrap lg container */
 }
