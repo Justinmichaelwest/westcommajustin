@@ -1284,10 +1284,11 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.header .mobile-nav-toggle {
-  right: var(--bs-gutter-x, 1.5rem) !important;
+.mobile-nav-toggle {
+  position: absolute;
+  right: 0;
 }
 
-.mobile-nav-active .mobile-nav-toggle {
-  right: calc(var(--bs-gutter-x, 1.5rem) + 300px) !important;
+.header {
+  position: relative;
 }
