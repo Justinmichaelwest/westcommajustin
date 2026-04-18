@@ -1284,6 +1284,12 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.mobile-nav-toggle {
-  right: clamp(12px, 2vw, 24px);
+/* Match container horizontal padding */
+.header .mobile-nav-toggle {
+  right: var(--bs-gutter-x, 1.5rem);
+}
+
+/* When menu is open */
+.mobile-nav-active .mobile-nav-toggle {
+  right: calc(var(--bs-gutter-x, 1.5rem) + 300px);
 }
