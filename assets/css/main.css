@@ -174,7 +174,7 @@ h6 {
   color: var(--nav-color);
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 100px;
   font-size: 32px;
   line-height: 0;
   cursor: pointer;
@@ -293,13 +293,6 @@ h6 {
   transition: 0.3s;
 }
 
-mobile-nav-toggle {
-  right: 40px;
-}
-
-.mobile-nav-active .mobile-nav-toggle {
-  right: 340px;
-}
 
 /*--------------------------------------------------------------
 # Global Footer
