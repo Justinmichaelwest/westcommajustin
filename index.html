@@ -13,9 +13,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main_playground.css" rel="stylesheet">
 
 </head>
 
@@ -35,7 +35,12 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
       <img src="download.png" alt="wink">
-      <span class="site-name">Justin West-Under Construction</span>
+      
+      <div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch"></label>
+</div>
+
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -49,6 +54,7 @@
               <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 
     </div>
+    
   </header>
 
   <main class="main">
@@ -57,14 +63,9 @@
     <section id="portfolio" class="portfolio section">
 
       <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          </div>
-
-          <div class="row gx-3 gy-3 isotope-container" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1344px;">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+         
+        <div class="row gx-3 gy-3 isotope-container" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1344px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item dark" style="position: absolute; left: 0px; top: 0px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/Maiden Voyage.jpg" class="img-fluid" alt="Maiden Voyage Tattoo">
                 <div class="portfolio-info">
@@ -79,7 +80,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 440px; top: 0px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item light" style="position: absolute; left: 440px; top: 0px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/HPAH.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -92,7 +93,8 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 880px; top: 0px;">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item dark" style="position: absolute; left: 880px; top: 0px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -106,7 +108,8 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 0px; top: 336px;">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item light" style="position: absolute; left: 0px; top: 336px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -120,7 +123,8 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 440px; top: 336px;">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item dark" style="position: absolute; left: 440px; top: 336px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -134,7 +138,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 880px; top: 336px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item light" style="position: absolute; left: 880px; top: 336px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -148,7 +152,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 0px; top: 672px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item dark" style="position: absolute; left: 0px; top: 672px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -162,7 +166,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 440px; top: 672px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item light" style="position: absolute; left: 440px; top: 672px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -176,7 +180,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 880px; top: 672px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item dark" style="position: absolute; left: 880px; top: 672px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -190,7 +194,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 0px; top: 1008px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item light" style="position: absolute; left: 0px; top: 1008px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -204,7 +208,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 440px; top: 1008px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item dark" style="position: absolute; left: 440px; top: 1008px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -218,7 +222,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 880px; top: 1008px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item light" style="position: absolute; left: 880px; top: 1008px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -240,17 +244,9 @@
 
     </section><!-- /Portfolio Section -->
 
-   
-    </section><!-- /Clients Section -->
-
-   
-        </div>
-
-      </div>
-
   </main>
 
-  <footer id="footer" class="footer light-background">
+  <footer id="footer" class="footer">
 
     <div class="container">
       <div class="copyright text-center ">
@@ -282,6 +278,52 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toggle = document.getElementById('theme-switch');
+  const container = document.querySelector('.isotope-container');
+
+  if (!toggle || !container) return;
+
+  let iso;
+
+  // Wait for Isotope (initialized in main.js)
+  setTimeout(() => {
+    iso = Isotope.data(container);
+
+    // Apply saved theme on load
+    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    document.body.setAttribute('data-theme', savedTheme);
+    toggle.checked = savedTheme === 'dark';
+
+    if (iso) {
+      iso.arrange({
+        filter: '.' + savedTheme
+      });
+    }
+
+  }, 300);
+
+  // Toggle switch
+  toggle.addEventListener('change', () => {
+    const theme = toggle.checked ? 'dark' : 'light';
+
+    document.body.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+
+    if (iso) {
+      iso.arrange({
+        filter: '.' + theme
+      });
+    }
+  });
+
+});
+</script>
+
 
 </body>
 
