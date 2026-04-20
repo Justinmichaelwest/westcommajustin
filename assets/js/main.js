@@ -117,14 +117,14 @@
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
-    window.iso = null;
+    let initIsotope;
     imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
-     window.iso = new Isotope(isotopeItem.querySelector('.isotope-container'), {
-  itemSelector: '.isotope-item',
-  layoutMode: fitrows,
-  filter: filter,
-  sortBy: sort
-});
+      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
+        itemSelector: '.isotope-item',
+        layoutMode: layout,
+        filter: filter,
+        sortBy: sort
+      });
     });
 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
@@ -139,39 +139,7 @@
         }
       }, false);
     });
-const toggle = document.getElementById('theme-switch');
 
-if (toggle) {
-  toggle.addEventListener('change', () => {
-    const theme = toggle.checked ? 'dark' : 'light';
-    document.body.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-
-    if (window.iso) {
-      if (theme === 'dark') {
-        window.iso.arrange({ filter: '.dark' });
-      } else {
-        window.iso.arrange({ filter: '.light' });
-      }
-    }
-  });
-
-  // Load saved theme
-  const savedTheme = localStorage.getItem('theme');
-
-  if (savedTheme === 'dark') {
-    document.body.setAttribute('data-theme', 'dark');
-    toggle.checked = true;
-
-    if (window.iso) {
-      window.iso.arrange({ filter: '.dark' });
-    }
-  } else {
-    if (window.iso) {
-      window.iso.arrange({ filter: '.light' });
-    }
-  }
-}
   });
 
   /**
