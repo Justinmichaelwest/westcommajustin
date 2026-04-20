@@ -172,9 +172,7 @@ h6 {
 /* Navmenu */
 .mobile-nav-toggle {
   color: var(--nav-color);
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  
   font-size: 32px;
   line-height: 0;
   cursor: pointer;
@@ -1281,4 +1279,10 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+@media (max-width: 576px) {
+  .site-name {
+    display: none;
+  }
 }
