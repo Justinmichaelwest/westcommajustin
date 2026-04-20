@@ -172,7 +172,6 @@ h6 {
 /* Navmenu */
 .mobile-nav-toggle {
   color: var(--nav-color);
-  
   font-size: 32px;
   line-height: 0;
   cursor: pointer;
