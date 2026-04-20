@@ -1286,3 +1286,42 @@ section,
     display: none;
   }
 }
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.theme-toggle label {
+  width: 44px;
+  height: 24px;
+  background: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.theme-toggle input:checked + label {
+  background: #000;
+}
+
+.theme-toggle input:checked + label::after {
+  transform: translateX(20px);
+}
