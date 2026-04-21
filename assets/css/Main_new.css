@@ -187,8 +187,8 @@ h3, h4, h5, h6 {
   opacity: 1;
 }
 
-.portfolio-info h3 {
-  color: #fff;
+.portfolio-item.dark .portfolio-info h3 {
+  color: #fff !important;
 }
 
 .portfolio .portfolio-content:hover img {
