@@ -196,10 +196,15 @@ h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
-.portfolio-info .btn .btn-dark {
+.portfolio-info .btn {
+  border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
 
+.portfolio-info .btn:hover {
+  background: var(--accent-color);
+  color: #000;
+}
 /*--------------------------------------------------------------
 # PORTFOLIO FILTER (CLEAN VERSION)
 --------------------------------------------------------------*/
