@@ -196,30 +196,7 @@ h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
-.portfolio-info .btn {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-}
 
-.portfolio-info .btn:hover {
-  background: var(--accent-color);
-  color: #000;
-}
-
-.portfolio-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 1px;
-  background: var(--accent-color);
-  transition: width 0.3s ease;
-}
-
-.portfolio-link:hover::after {
-  width: 100%;
-}
 /*--------------------------------------------------------------
 # PORTFOLIO FILTER (CLEAN VERSION)
 --------------------------------------------------------------*/
