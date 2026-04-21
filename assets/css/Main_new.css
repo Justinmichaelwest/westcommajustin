@@ -222,3 +222,22 @@ body[data-theme="light"] .portfolio-content {
 body[data-theme="dark"] .portfolio-content {
   background: #000000;
 }
+
+.portfolio-info h3,
+.portfolio-info a {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.4s ease;
+}
+
+.portfolio-content:hover .portfolio-info h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.portfolio-content:hover .portfolio-info a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
