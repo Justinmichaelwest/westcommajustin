@@ -187,6 +187,10 @@ h3, h4, h5, h6 {
   opacity: 1;
 }
 
+.portfolio-info h3 {
+  color: #fff;
+}
+
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
 }
