@@ -205,6 +205,10 @@ h3, h4, h5, h6 {
   background: var(--accent-color);
   color: #000;
 }
+
+.portfolio-link {
+  color: #ff00aa;
+}
 /*--------------------------------------------------------------
 # PORTFOLIO FILTER (CLEAN VERSION)
 --------------------------------------------------------------*/
