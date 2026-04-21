@@ -1,0 +1,214 @@
+:root {
+  scroll-behavior: smooth;
+
+  /* Fonts */
+  --default-font: "Inconsolata", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --heading-font: "Special Gothic Expanded One", sans-serif;
+  --nav-font: "Inconsolata", sans-serif;
+
+  /* Colors */
+  --background-color: #ffffff;
+  --default-color: #212529;
+  --heading-color: #000000;
+  --accent-color: #000000;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+
+  /* Nav */
+  --nav-color: #5b5b5b;
+  --nav-hover-color: #000000;
+  --nav-mobile-background-color: #f5f5f5;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #5b5b5b;
+  --nav-dropdown-hover-color: #000000;
+}
+
+body[data-theme="dark"] {
+  --background-color: #000000;
+  --default-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --accent-color: #ff00aa;
+
+  --heading-font: "Special Gothic Expanded One", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+body[data-theme="light"] {
+  --heading-font: "Special Gothic Expanded One", sans-serif;
+}
+
+body {
+  font-family: var(--default-font);
+  background: var(--background-color);
+  color: var(--default-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--accent-color);
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/*--------------------------------------------------------------
+# HEADER
+--------------------------------------------------------------*/
+.header {
+  background: var(--background-color);
+  color: var(--default-color);
+  padding: 15px 0 60px 0;
+}
+
+.header .logo img {
+  max-height: 32px;
+  padding-right: 15px;
+}
+
+/*--------------------------------------------------------------
+# NAV
+--------------------------------------------------------------*/
+.mobile-nav-toggle {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.navmenu {
+  position: fixed;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background: var(--nav-mobile-background-color);
+  transition: 0.3s;
+}
+
+.mobile-nav-active .navmenu {
+  right: 0;
+}
+
+/*--------------------------------------------------------------
+# FOOTER (RESPONDS TO THEME)
+--------------------------------------------------------------*/
+.footer {
+  background: var(--background-color);
+  color: var(--default-color);
+  padding: 40px 0;
+}
+
+.footer .social-links a {
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  padding: 10px;
+  size: 50px;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.theme-toggle label {
+  width: 44px;
+  height: 24px;
+  background: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.theme-toggle input:checked + label {
+  background: #000;
+}
+
+.theme-toggle input:checked + label::after {
+  transform: translateX(20px);
+}
+
+/*--------------------------------------------------------------
+# PORTFOLIO
+--------------------------------------------------------------*/
+.portfolio .portfolio-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-content img {
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-content .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-content:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-content:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# PORTFOLIO FILTER (CLEAN VERSION)
+--------------------------------------------------------------*/
+.portfolio-item {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* hide opposite theme */
+body[data-theme="dark"] .portfolio-item.light,
+body[data-theme="light"] .portfolio-item.dark {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  position: absolute;
+}
+
+/*--------------------------------------------------------------
+# CARD STYLING PER THEME
+--------------------------------------------------------------*/
+body[data-theme="light"] .portfolio-content {
+  background: #ffffff;
+}
+
+body[data-theme="dark"] .portfolio-content {
+  background: #000000;
+}
