@@ -187,12 +187,9 @@ h3, h4, h5, h6 {
 }
 
 .portfolio-item.dark .portfolio-info h3 {
-  color: #fff !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
+  color: #fff;
   text-align: center;
+  margin: 0;
 }
 
 .portfolio .portfolio-content:hover img {
