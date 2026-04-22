@@ -30,7 +30,6 @@ body[data-theme="dark"] {
   --accent-color: #ff00aa;
 
   --heading-font: "Special Gothic Expanded One", sans-serif;
-  letter-spacing: 0.5px;
 }
 
 body[data-theme="light"] {
