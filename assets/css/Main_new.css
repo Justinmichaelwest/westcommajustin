@@ -220,6 +220,12 @@ h3, h4, h5, h6 {
   color: #000;
 }
 
+.details {
+  color: var(--font-color);
+  background: var(--heading-color);
+  
+}
+
 
 /*--------------------------------------------------------------
 # PORTFOLIO FILTER (CLEAN VERSION)
