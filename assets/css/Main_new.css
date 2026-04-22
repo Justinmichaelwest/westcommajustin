@@ -150,7 +150,7 @@ h3, h4, h5, h6 {
 }
 
 .theme-toggle input:checked + label {
-  background: #000;
+  background: #ff00aa;
 }
 
 .theme-toggle input:checked + label::after {
