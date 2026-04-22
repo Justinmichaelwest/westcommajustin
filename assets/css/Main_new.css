@@ -1,6 +1,11 @@
 :root {
   scroll-behavior: smooth;
 
+  /* prevent layout shift from scrollbar */
+html {
+  overflow-y: scroll;
+}
+
   /* Fonts */
   --default-font: "Inconsolata", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --heading-font: "Special Gothic Expanded One", sans-serif;
