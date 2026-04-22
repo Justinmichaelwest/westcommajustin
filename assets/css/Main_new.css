@@ -221,8 +221,22 @@ h3, h4, h5, h6 {
 }
 
 .details {
-  color: var(--font-color);
-  background: var(--heading-color);
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background: #fff;
+  color: #000;
+
+  border: 1px solid #fff;
+  margin-top: 10px;
+
+  opacity: 1;           /* always visible */
+  transform: none;      /* remove animation offset */
+  transition: all 0.2s ease;
+}
   
 }
 
@@ -256,9 +270,8 @@ body[data-theme="dark"] .portfolio-content {
 
 .portfolio-info h3,
 .portfolio-info a {
-  opacity: 0;
-  transform: translateY(15px);
-  transition: all 0.4s ease;
+  opacity: 1;
+  transform: none;
 }
 
 .portfolio-content:hover .portfolio-info h3 {
