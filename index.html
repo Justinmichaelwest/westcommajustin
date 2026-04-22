@@ -28,7 +28,7 @@
 
 </head>
 
-<body class="index-page">
+<body class="index-page" data-theme="light">
     <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container position-relative d-flex align-items-center justify-content-between">
             <a href="/" class="logo d flex align-items-center">
@@ -170,8 +170,13 @@ if (window.location.pathname.endsWith('index.html')) {
 }
 </script>
 
-  <script id="themeToggleScript">
+<script id="themeToggleScript">
 const toggle = document.getElementById('theme-switch');
+
+// Set initial toggle state based on current theme
+if (document.body.getAttribute('data-theme') === 'dark') {
+  toggle.checked = true;
+}
 
 toggle.addEventListener('change', function () {
   if (this.checked) {
