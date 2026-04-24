@@ -289,5 +289,5 @@ body[data-theme="dark"] .portfolio-content {
 }
 
 .hpah-portfolio {
-  background: #72253d;
+  background: url('assets/img/portfolio/HPAH_portfolio.jpg') center/cover no-repeat;
 }
