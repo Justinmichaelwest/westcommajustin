@@ -289,8 +289,8 @@ body[data-theme="dark"] .portfolio-content {
 }
 
 .hpah-portfolio {
-  background: url('../img/portfolio/HPAH_Portfolio.jpg'') center/cover no-repeat;
-  width: 100%;
-  padding: 100px 0; /* 👈 creates height */
-  
+  background: url('../img/portfolio/HPAH_Portfolio.jpg') center/cover no-repeat;
+  min-height: 500px; /* 👈 REQUIRED */
+  display: flex;
+  align-items: center; /* optional: vertical center text */
 }
