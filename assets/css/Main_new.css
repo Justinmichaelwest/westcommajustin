@@ -288,6 +288,10 @@ body[data-theme="dark"] .portfolio-content {
   transition-delay: 0.2s;
 }
 
+/*--------------------------------------------------------------
+# HPAH PORTFOLIO SECTION
+--------------------------------------------------------------*/
+
 .hpah-portfolio {
   background: #72253d;
   min-height: 500px; /* 👈 REQUIRED */
@@ -302,4 +306,13 @@ body[data-theme="dark"] .portfolio-content {
   max-width: 600px;
   width: 100%;
   height: auto;
+}
+
+.hpah-details {
+  background: var(--background-color);
+  color: var(--default-color);
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
 }
