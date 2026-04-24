@@ -34,11 +34,8 @@
             <a href="/" class="logo d-flex align-items-center">
                 <img src="download.png" alt="wink">
             </a>
-            <div class="theme-toggle">
-                <input type="checkbox" id="theme-switch">
-                <label for="theme-switch">
-                </label>
-        </div>
+            
+          <button id="surpriseBtn" class="surprise-btn">Surprise Me</button>
     </header>
   
   <main class="main">
@@ -73,4 +70,30 @@
 
     </div>
   </footer>
+  
+  <script>
+  const pages = [
+    "hpah.html",
+    "project2.html",
+    "project3.html",
+    "project4.html"
+  ];
+
+  document.getElementById("surpriseBtn").addEventListener("click", () => {
+    const randomPage = pages[Math.floor(Math.random() * pages.length)];
+    window.location.href = randomPage;
+  });
+
+    const currentPage = window.location.pathname.split("/").pop();
+
+let filteredPages = pages.filter(page => page !== currentPage);
+const randomPage = filteredPages[Math.floor(Math.random() * filteredPages.length)];
+
+    const btn = document.getElementById("surpriseBtn");
+
+btn.addEventListener("click", () => {
+  btn.innerText = "Rolling...";
+});
+    
+</script>
 </body>
