@@ -311,6 +311,20 @@ body[data-theme="dark"] .portfolio-content {
   max-width: 800px;
 }
 
+.surprise-btn {
+  background: transparent;
+  border: 2px solid #000;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.surprise-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
   .hpah-portfolio {
