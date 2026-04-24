@@ -295,3 +295,8 @@ body[data-theme="dark"] .portfolio-content {
   align-items: center; /* optional: vertical center text */
   padding: 100px;
 }
+
+.hpah-portfolio img {
+  margin: 0 auto;
+  max-width: 600px;
+}
