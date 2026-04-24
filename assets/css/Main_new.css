@@ -292,11 +292,15 @@ body[data-theme="dark"] .portfolio-content {
   background: #72253d;
   min-height: 500px; /* 👈 REQUIRED */
   display: flex;
+  justify-content: center;
   align-items: center; /* optional: vertical center text */
   padding: 100px;
 }
 
-.hpah-portfolio img {
+.hpah-portfoio img {
+  display: block;
   margin: 0 auto;
   max-width: 600px;
+  width: 100%
+  height: auto;
 }
