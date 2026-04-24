@@ -289,7 +289,7 @@ body[data-theme="dark"] .portfolio-content {
 }
 
 .hpah-portfolio {
-  background: url('assets/img/portfolio/HPAH_Portfolio.jpg') center/cover no-repeat;
+  background: url('../img/portfolio/HPAH_Portfolio.jpg'') center/cover no-repeat;
   width: 100%;
   padding: 100px 0; /* 👈 creates height */
   
