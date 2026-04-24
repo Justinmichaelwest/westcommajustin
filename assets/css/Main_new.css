@@ -291,6 +291,6 @@ body[data-theme="dark"] .portfolio-content {
 .hpah-portfolio {
   background: url('assets/img/portfolio/HPAH_Portfolio.jpg') center/cover no-repeat;
   width: 100%;
-  height: auto;
+  padding: 100px 0; /* 👈 creates height */
   
 }
