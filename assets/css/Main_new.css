@@ -287,3 +287,7 @@ body[data-theme="dark"] .portfolio-content {
   transform: translateY(0);
   transition-delay: 0.2s;
 }
+
+.hpah-portfolio {
+  background: #72253d;
+}
